@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Import Data Set
-dataset = pd.read_csv('../Salary_Data.csv')
+dataset = pd.read_csv('Salary_Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
@@ -30,7 +30,6 @@ plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 
 plt.show()
-
 
 plt.scatter(X_test, y_test, color='red')
 
